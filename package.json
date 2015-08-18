@@ -1,10 +1,7 @@
 {
   "name": "systemjs-plugin-yaml",
   "version": "0.1.0",
-  "main": "json",
-  "dependencies": {
-    "js-yaml": "^3.3.1"
-  },
+  "main": "yaml",
   "repository": {
     "type": "git",
     "url": "http://github.com/tb/plugin-yaml.git"
@@ -13,5 +10,12 @@
   "bugs": {
     "url": "https://github.com/tb/plugin-yaml/issues"
   },
-  "homepage": "https://github.com/tb/plugin-yaml"
+  "homepage": "https://github.com/tb/plugin-yaml",
+  "dependencies": {
+    "js-yaml": "^3.3.1"
+  },
+  "devDependencies": {
+    "es6-module-loader": "^0.17.6",
+    "systemjs": "^0.18.11"
+  }
 }

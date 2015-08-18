@@ -1,4 +1,4 @@
-plugin-json
+plugin-yaml
 ===========
 
-JSON loader plugin
+YAML loader plugin
