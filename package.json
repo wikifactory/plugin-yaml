@@ -1,7 +1,7 @@
 {
   "name": "systemjs-plugin-yaml",
   "version": "0.1.0",
-  "main": "yaml",
+  "main": "yaml.js",
   "repository": {
     "type": "git",
     "url": "http://github.com/tb/plugin-yaml.git"
