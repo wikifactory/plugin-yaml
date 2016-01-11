@@ -17,5 +17,6 @@
   "devDependencies": {
     "es6-module-loader": "^0.17.6",
     "systemjs": "^0.18.11"
-  }
+  },
+  "registry": "npm"
 }
