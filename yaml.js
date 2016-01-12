@@ -30,6 +30,7 @@ exports.translate = function (load) {
 	    })
 	    .catch(function(e) {
 		console.log("No override found for " + js.overrides);
+		return 'module.exports = ' + JSON.stringify(js);
 	    });
     }
     return 'module.exports = ' + JSON.stringify(js);
