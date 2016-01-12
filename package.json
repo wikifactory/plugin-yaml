@@ -4,18 +4,19 @@
   "main": "yaml.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/tb/plugin-yaml.git"
+    "url": "http://github.com/wikifactory/plugin-yaml.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tb/plugin-yaml/issues"
+    "url": "https://github.com/wikifactory/plugin-yaml/issues"
   },
-  "homepage": "https://github.com/tb/plugin-yaml",
+  "homepage": "https://github.com/wikifactory/plugin-yaml",
   "dependencies": {
-    "js-yaml": "^3.3.1"
+    "js-yaml": "^3.5.1"
   },
   "devDependencies": {
     "es6-module-loader": "^0.17.6",
+    "gulp": "^3.9.0",
     "systemjs": "^0.18.11"
   },
   "registry": "npm"
