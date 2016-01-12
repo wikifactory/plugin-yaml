@@ -15,8 +15,8 @@ var extend = function (a, b) {
 }
 
 exports.translate = function (load) {
-    // add overridesDir to System.map by changing config.js to include something like:
-    // System.config({
+    // add overridesDir to System.map by changing config.js using something like:
+    // builder.config({
     //   map: {
     //     overridesDir: 'sites/siteName'
     //   }
@@ -25,8 +25,11 @@ exports.translate = function (load) {
     if (js.overrides) {
 	return System.import("overridesDir/" + js.overrides)
 	    .then(function(m) {
-		extend(js, m)
+		extend(js, m);
 		return 'module.exports = ' + JSON.stringify(js);
+	    })
+	    .catch(function(e) {
+		console.log("No override found for " + js.overrides);
 	    });
     }
     return 'module.exports = ' + JSON.stringify(js);
