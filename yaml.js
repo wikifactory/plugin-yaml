@@ -19,8 +19,8 @@ exports.fetch = function(load, fetch) {
         // if overrides file doesn't exist - fake it
         // auto-create the file here?
         return ""
-      })
-}
+      });
+};
 
 exports.translate = function (load) {
     // add overridesDir to System.map by changing config.js using something like:
@@ -37,16 +37,13 @@ exports.translate = function (load) {
     }
     if (js.overrides) {
       var importPath =  System.map.overridesDir + '/' + js.overrides;
-      if (System.builder) {
-        //importPath = System.baseURL + importPath;
-      }
       var js = JSON.stringify(js);
       var ModuleStr = `import {conf as overrides} from '${importPath}';
 	     ${extend};
 	     var js = ${js};
-       extend(js, overrides);
-       export var conf = js;`
+	     extend(js, overrides);
+	     export var conf = js;`
 	    return ModuleStr
     }
     return "export var conf =" +  JSON.stringify(js);
-}
+};
