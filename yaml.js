@@ -36,7 +36,7 @@ exports.translate = function (load) {
 	     js = jsyaml.load(load.source);
     }
     if (js.overrides) {
-      var importPath =  System.map.overridesDir + '/' + js.overrides;
+      var importPath =  this.map.overridesDir + '/' + js.overrides;
       var js = JSON.stringify(js);
       var ModuleStr = `import {conf as overrides} from '${importPath}';
 	     ${extend};
