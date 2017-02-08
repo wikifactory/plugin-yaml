@@ -13,6 +13,6 @@
   "homepage": "https://github.com/wikifactory/plugin-yaml",
   "dependencies": {
     "js-yaml": "^3.5.1"
-  }.
+  },
   "registry": "npm"
 }
